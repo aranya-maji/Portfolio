@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+    <title>Cluster Comet</title>
+</head>
+<body>
+    <div id="bg">
+        <div id="particles-js"></div>
+    </div>
+    <div id="navbar">
+        <div id="logoArea">
+            <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="" srcset="" id="logo1">
+            <p id="p6">
+                Cluster Comet
+            </p>
+        </div>
+        <div id="optionArea">
+            <p class="p1" id="op1" onmouseenter="hovin('op1')" onmouseleave="hovout('op1')" onclick="scr('abtProj')">
+                About project
+            </p>
+            <p class="p1" id="op2" onmouseenter="hovin('op2')" onmouseleave="hovout('op2')" onclick="scr('hiw')">
+                How it works
+            </p>
+            <p class="p1" id="op3" onmouseenter="hovin('op3')" onmouseleave="hovout('op3')" onclick="scr('tio')">
+                Try it Out
+            </p>
+            <p class="p1" id="op4" onmouseenter="hovin('op4')" onmouseleave="hovout('op4')" onclick="scr('cs')">
+                Case Study
+            </p>
+            <p class="p1" id="op5" onmouseenter="hovin('op5')" onmouseleave="hovout('op5')" onclick="scr('oc')">
+                Our Creators
+            </p>
+        </div>
+    </div>
+    <div id="banner">
+        <p id="p7">
+            A tool for visualizing community detection in a graph using Community Detection Algorithms
+        </p>
+    </div>
+    <div id="abtProj">
+        <p id="abtProj_head">
+            About Project
+        </p>
+        <p id="abtProj_content">
+            Welcome to our Cluster Comet! Our platform is dedicated to exploring and 
+            understanding the intricate networks that shape communities. Through the implementation 
+            of various algorithms such as Louvain's algorithm, Girvan-Newman algorithm, Modularity 
+            Optimization algorithm, and Label Propagation algorithm, we aim to unravel the hidden structures 
+            within these networks.<br><br>
+            Community detection plays a pivotal role in understanding how individuals or entities interact and 
+            form groups or clusters within a network. Our platform provides a user-friendly interface to apply 
+            these algorithms, allowing users to visualize, analyze, and interpret the communities present in 
+            their networks.<br><br>
+            Louvain's algorithm and Girvan-Newman algorithm are renowned for their effectiveness in detecting 
+            communities by optimizing network modularity. Meanwhile, the Modularity Optimization algorithm refines 
+            this process by iteratively improving the network's modularity. On the other hand, Label Propagation 
+            algorithm utilizes label information to identify communities based on node similarities.<br><br>
+            Whether you're a researcher, student, or enthusiast keen on understanding the dynamics of communities 
+            within networks, our platform offers a powerful toolkit to explore and analyze these structures 
+            efficiently.<br><br>
+            Join us in this journey of discovery and exploration as we delve into the fascinating world of 
+            community detection!
+        </p>
+    </div>
+    <div id="hiw">
+        <p id="hiw_head">
+            How it works
+        </p>
+        <div id="hiw_content">
+            <div class="hiw_row">
+                <p class="p2">
+                    Make sure your CSV file has only 2 columns 
+                    with the column heading names as “source” and 
+                    “target” as Community Detection works on only 
+                    2 column dataset.
+                </p>
+                <div id="imageArea">
+                    <img src="{{ url_for('static', filename='img/ss.svg') }}" alt="" srcset="" id="ss">
+                </div>
+            </div>
+            <div class="hiw_row">
+                <p class="p2">
+                    1.&nbspUpload CSV file.
+                </p>
+            </div>
+            <div class="hiw_row">
+                <p class="p2">
+                    2.&nbspSelect the type of network.
+                </p>
+            </div>
+            <div class="hiw_row">
+                <p class="p2">
+                    3.&nbspSelect from the algorithms list.
+                </p>
+            </div>
+            <div class="hiw_row">
+                <p class="p2">
+                    4.&nbspGo for Execute.
+                </p>
+            </div>
+            <div class="hiw_row">
+                <p class="p2">
+                    5.&nbspThe output will be visible in a new webpage.
+                </p>
+            </div>
+        </div>
+    </div>
+    <form id="tio" action="/upload" method="post" enctype="multipart/form-data">
+        <p id="tio_heading">
+            Try it Out!!
+        </p>
+        <div class="tio_row">
+            <input class="tio_button" type="file" name="csvfile" accept=".csv" required>
+            </input>
+        </div>
+        <p id="p9">
+            What is your graph about?
+        </p>
+        <div class="area">
+            <div class="card_button">
+                <div class="card1_button" style="background: #FFC5C5;" onclick="optview('0')">
+                    <p class="p8">
+                        Social Networks
+                    </p>
+                </div>
+                <div class="card1_button" style="background: #C7DCA7;" onclick="optview('1')">
+                    <p class="p8">
+                        Biological Networks<br>
+                        Citation Networks<br>
+                        Financial Networks
+                    </p>
+                </div>
+                <div class="card1_button" style="background: #8EACCE;" onclick="optview('2')">
+                    <p class="p8">
+                        Epidemiological Networks
+                    </p>
+                </div>
+            </div>    
+            <div class="card_button">
+                <div class="card1_button" style="background: #F9B572;" onclick="optview('3')">
+                    <p class="p8">
+                        Web Networks
+                    </p>
+                </div>
+                <div class="card1_button" style="background: #D0BFFF;" onclick="optview('4')">
+                    <p class="p8">
+                        Collaboration Networks<br>
+                        Sensor Networks<br>
+                        Transportation Networks
+                    </p>
+                </div>
+                <div class="card1_button" style="background: #D7C0AE;" onclick="optview('5')">
+                    <p class="p8">
+                        Communication Networks
+                        Affiliation Networks
+                    </p>
+                </div>
+            </div>    
+            <div class="card_button">
+                <div class="card1_button" style="background: #ffffcc;" onclick="optview('6')">
+                    <p class="p8">
+                        Miscellaneous Networks
+                    </p>
+                </div>
+            </div>    
+        </div>
+        <p id="p10">
+            Choose from the type of algorithms you want to use
+        </p>
+        <div class="area">
+            <div class="optArea" id="f0">
+                <input type="radio" name="nField" id="" value="0" required>
+                Louvain Algorithm
+            </div>
+            <div class="optArea" id="f1">
+                <input type="radio" name="nField" id="" value="1" required>
+                Girvan Newman Algorithm
+            </div>
+            <div class="optArea" id="f2">
+                <input type="radio" name="nField" id="" value="2" required>
+                Modularity Optimisation Algorithm
+            </div>
+            <div class="optArea" id="f3">
+                <input type="radio" name="nField" id="" value="3" required>
+                Label Propagation Algorithm
+            </div>
+        </div>
+        <div class="tio_row">
+            <input class="tio_button" type="submit" value="Execute">
+            </input>
+        </div>
+        <div class="tio_row">
+            <p class="p2">
+                The output will be visible in a new webpage.
+            </p>
+        </div>
+    </form>
+    <div id="cs">
+        <p id="p11">
+            Popular Case Study
+        </p>
+        <div class="csTpanel">
+            <div class="csBarea">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 51" fill="none" class="butt" onclick="gob()">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M27.5847 1.41528C28.805 2.63569 28.805 4.61432 27.5847 5.83473L11.0444 22.375H53.5C55.226 22.375 56.625 23.7741 56.625 25.5C56.625 27.226 55.226 28.625 53.5 28.625H11.0444L27.5847 45.1654C28.805 46.3857 28.805 48.3644 27.5847 49.5848C26.3644 50.8051 24.3856 50.8051 23.1653 49.5848L1.29022 27.7097C0.70419 27.1238 0.374939 26.3288 0.374939 25.5C0.374939 24.6713 0.70419 23.8763 1.29022 23.2903L23.1653 1.41528C24.3856 0.194906 26.3644 0.194906 27.5847 1.41528Z" fill="white"/>
+                    </svg>
+            </div>
+            <div class="csPanel">
+                <div id="panel1">
+                    <p class="panel_head">
+                        Zachary Karate Club
+                    </p>
+                    <p class="panel_content">
+                        In the '70s, Wayne W. Zachary uncovered a social marvel within the 
+                        Zachary Karate Club at a university. This 34-member club, led by "Mr. Hi," 
+                        became Zachary's exploration ground for social networks.<br><br>
+                        A rift split the club, dividing members between loyalty to Mr. Hi 
+                        and a new faction. Zachary meticulously documented these ties, 
+                        creating a network graph that symbolized connections—subtle interactions 
+                        and shared bonds among individuals.<br><br>
+                        Beyond martial arts, this club became a sociological treasure trove. 
+                        It offered insights into social networks, showcasing the impact of 
+                        division and the intricate ties that shape us.<br><br>
+                        In the web app's world of community detection algorithms, the 
+                        Zachary Karate Club remains a pivotal case study. It sheds light on the 
+                        complexities of human connections and the algorithms' prowess in deciphering 
+                        these networks.
+                    </p>
+                </div>
+                <div id="panel2">
+                    <p class="panel_head">
+                        Louvains Algorithm
+                    </p>
+                    <p class="panel_content">
+                        Louvain's algorithm's success in generating four distinct communities within 
+                        the Zachary Karate Club dataset highlights its effectiveness in detecting 
+                        intricate social structures.<br><br>
+                        The algorithm optimizes modularity, efficiently dividing the club into 
+                        cohesive groups. It emphasizes strong intra-community connections and 
+                        weaker inter-community ties, revealing the network's internal structures 
+                        with clarity.<br><br>
+                        Notably, its computational efficiency ensured swift analysis, identifying 
+                        these four communities promptly. Louvain's adaptability to diverse community 
+                        sizes allowed it to capture both cohesive clusters and subtle substructures 
+                        within the club's network.<br><br>
+                        By precisely identifying these communities, Louvain's algorithm validated 
+                        the evident divisions within the club while showcasing its prowess in 
+                        capturing detailed social dynamics. Its ability to discern these nuanced 
+                        structures underscores its value in understanding complex social networks, 
+                        offering insights into the Zachary Karate Club's intricate social fabric.
+                    </p>
+                </div>
+                <div id="panel3">
+                    <img src="{{ url_for('static', filename='img/ss1.svg') }}" alt="" class="ss_size">
+                </div>
+                <div id="panel4">
+                    <p class="panel_head">
+                        Girvan Newman Algorithm
+                    </p>
+                    <p class="panel_content">
+                        Girvan Newman's algorithm, applied to the Zachary Karate Club dataset, 
+                        diverged from expectations by consolidating the network into two communities 
+                        instead of the anticipated four distinct clusters.<br><br>
+                        This algorithm identifies communities by progressively removing central edges, 
+                        aiming to break the network into smaller clusters. In this case, it unexpectedly 
+                        fused the club's members into two larger, more interconnected groups.<br><br>
+                        The emphasis on edge centrality likely pinpointed crucial connections holding 
+                        the club together, leading to this binary split. What was thought to be four 
+                        separate clusters appeared to merge into two more cohesive communities under 
+                        this algorithm.<br><br>
+                        Despite the unexpected result, Girvan Newman's approach shed light on pivotal 
+                        connections' influence on community formation within the club's social network. 
+                        This consolidation into two communities offered a unique perspective on the 
+                        network's core connections and their impact on shaping the club's social dynamics, 
+                        providing a nuanced understanding of the Zachary Karate Club's structural composition.
+                    </p>
+                </div>
+                <div id="panel5">
+                    <img src="{{ url_for('static', filename='img/ss2.svg') }}" alt="" class="ss_size">
+                </div>
+                <div id="panel6">
+                    <p class="panel_head">
+                        Modularity Optimisation Algorithm
+                    </p>
+                    <p class="panel_content">
+                        The Modularity Optimization Algorithm, applied to the Zachary Karate Club dataset, 
+                        diverged from expectations by revealing three distinct communities instead of the 
+                        anticipated four clusters.<br><br>
+                        This algorithm aims to maximize internal connectivity within communities while 
+                        minimizing connections between them. In parsing the club's network, it surprisingly 
+                        organized members into three separate yet interconnected groups, showcasing cohesive 
+                        social clusters.<br><br>
+                        Despite the initial anticipation of four communities, this algorithm's focus on 
+                        strengthening internal bonds and reducing inter-community links unveiled a nuanced 
+                        division. It delineated three communities with strong internal ties but some 
+                        connections between them.<br><br>
+                        Though unexpected, this division into three communities offered valuable insights 
+                        into the club's social structure. The algorithm's approach highlighted the subtle 
+                        social affiliations within the network, offering a deeper understanding of the 
+                        Zachary Karate Club's community dynamics and the varying degrees of cohesion among 
+                        its members.
+                    </p>
+                </div>
+                <div id="panel7">
+                    <img src="{{ url_for('static', filename='img/ss3.svg') }}" alt="" class="ss_size">
+                </div>
+                <div id="panel8">
+                    <p class="panel_head">
+                        Label Propagation Algorithm
+                    </p>
+                    <p class="panel_content">
+                        When the Label Propagation Algorithm was applied to the Zachary Karate Club 
+                        dataset, it revealed an intriguing breakdown of the network into three distinct 
+                        communities, differing from the anticipated four clusters.<br><br>
+                        This algorithm operates by assigning initial labels to nodes and propagating 
+                        them through network connections, where nodes adopt the most frequent label of 
+                        their neighbors. In this scenario, it segmented the club's members into three 
+                        separate but interconnected communities, each representing cohesive social 
+                        clusters.<br><br>
+                        Despite the expectation of four communities, this algorithm's approach led 
+                        to the emergence of three distinct groups, characterized by nodes adopting 
+                        predominant labels within their connected clusters.<br><br>
+                        This unexpected division into three communities provided an insightful 
+                        view of the club's social structure. The Label Propagation Algorithm's 
+                        method illuminated the organic social affiliations within the network, 
+                        offering a nuanced understanding of the Zachary Karate Club's community 
+                        dynamics and highlighting the influential clusters and their interconnections 
+                        among club members.
+                    </p>
+                </div>
+                <div id="panel9">
+                    <img src="{{ url_for('static', filename='img/ss4.svg') }}" alt="" class="ss_size">
+                </div>
+                <div id="panel10">
+                    <p class="panel_head">
+                        Conclusion
+                    </p>
+                    <p class="panel_content">
+                        Louvain's algorithm successfully generated four well-defined communities, 
+                        showcasing clear and cohesive clusters. Girvan Newman's approach surprisingly 
+                        condensed the network into two communities, revealing pivotal connections and 
+                        a more unified structure than anticipated.<br><br>
+                        Modularity Optimization and Label Propagation algorithms both arrived at three 
+                        communities, emphasizing strong internal connections while showing varying 
+                        degrees of inter-community links.<br><br>
+                        In summary, Louvain's method provided clear divisions, Girvan Newman's 
+                        highlighted pivotal connections, and both Modularity Optimization and Label 
+                        Propagation showcased nuanced community structures. Each algorithm contributed 
+                        unique insights, offering a multifaceted understanding of the Zachary Karate 
+                        Club's social dynamics, portraying the complexities inherent in community 
+                        detection within networks.
+                    </p>
+                </div>
+            </div>
+            <div class="csBarea">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 51" fill="none" class="butt" onclick="gof()">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.4153 49.5847C28.195 48.3643 28.195 46.3857 29.4153 45.1653L45.9556 28.625L3.49998 28.625C1.77404 28.625 0.374975 27.2259 0.374975 25.5C0.374975 23.774 1.77404 22.375 3.49998 22.375L45.9556 22.375L29.4153 5.83462C28.195 4.6143 28.195 2.63555 29.4153 1.41524C30.6356 0.194923 32.6144 0.194923 33.8347 1.41524L55.7098 23.2903C56.2958 23.8762 56.6251 24.6712 56.6251 25.5C56.6251 26.3287 56.2958 27.1237 55.7098 27.7097L33.8347 49.5847C32.6144 50.8051 30.6356 50.8051 29.4153 49.5847Z" fill="white"/>
+                    </svg>
+            </div>
+        </div>
+        <p id="p11">
+            Our Case Study
+        </p>
+        <div class="csTpanel">
+            <div class="csBarea">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 51" fill="none" class="butt" onclick="gob1()">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M27.5847 1.41528C28.805 2.63569 28.805 4.61432 27.5847 5.83473L11.0444 22.375H53.5C55.226 22.375 56.625 23.7741 56.625 25.5C56.625 27.226 55.226 28.625 53.5 28.625H11.0444L27.5847 45.1654C28.805 46.3857 28.805 48.3644 27.5847 49.5848C26.3644 50.8051 24.3856 50.8051 23.1653 49.5848L1.29022 27.7097C0.70419 27.1238 0.374939 26.3288 0.374939 25.5C0.374939 24.6713 0.70419 23.8763 1.29022 23.2903L23.1653 1.41528C24.3856 0.194906 26.3644 0.194906 27.5847 1.41528Z" fill="white"/>
+                    </svg>
+            </div>
+            <div class="csPanel">
+                <div id="panel11">
+                    <p class="panel_head">
+                        Highschool
+                    </p>
+                    <p class="panel_content">
+                        In the labyrinth of a high school's social network dataset, nodes encapsulate students, 
+                        while edges signify friendships. Algorithms like Louvain or Modularity Optimisation 
+                        dissect this digital mesh, uncovering clusters that represent potential social communities.<br><br>
+                        These clusters are snapshots of interconnected relationships. Some might resonate with 
+                        sports camaraderie, while others might gleam with shared artistic passions or academic 
+                        pursuits.<br><br>
+                        As the algorithms decode the network, they unveil these cohesive communities, each 
+                        pulsating with shared connections and potential shared interests. The analysis refrains 
+                        from drawing definitive conclusions about the exact nature of these clusters, as the 
+                        complexity of human relationships extends beyond mere digital representations.<br><br>
+                        This dataset offers a peek into the intricate social dynamics of high school life, revealing 
+                        the interconnectedness fostered by friendships and shared affinities. Algorithms strive to 
+                        unveil the hidden structures within this network, providing insights into the potential 
+                        formations of social communities among the students.
+                    </p>
+                </div>
+                <div id="panel12">
+                    <p class="panel_head">
+                        Louvains Algorithm
+                    </p>
+                    <p class="panel_content">
+                        The Louvain algorithm dissected the high school social network dataset, analyzing students' 
+                        friendships encoded as edges between nodes. Its strategy centered on optimizing modularity, 
+                        seeking densely connected groups while minimizing connections between clusters.<br><br>
+                        By scrutinizing these connections iteratively, Louvain uncovered five distinct communities 
+                        within the network. These clusters highlighted groups of students tightly linked by 
+                        friendships or shared interests, offering a glimpse into the school's social fabric.<br><br>
+                        Louvain's approach refrained from defining the specifics of these communities, 
+                        encouraging users to explore and interpret the nuances of each cluster. This method provided 
+                        a valuable insight into how friendships formed cohesive groups within the high school. 
+                        It empowered users to delve deeper into the dynamics and intricacies of these detected 
+                        communities, shedding light on the social dynamics within the student body.
+                    </p>
+                </div>
+                <div id="panel13">
+                    <img src="{{ url_for('static', filename='img/ss5.svg') }}" alt="" class="ss_size">
+                </div>
+                <div id="panel14">
+                    <p class="panel_head">
+                        Girvan Newman Algorithm
+                    </p>
+                    <p class="panel_content">
+                        Girvan-Newman algorithm took a unique path through the high school network, methodically 
+                        isolating crucial connections within the friendships dataset. By progressively removing 
+                        key edges, it unveiled a network divided into two distinct communities.<br><br>
+                        In contrast to Louvain's multiple clusters, Girvan-Newman highlighted a clear polarization 
+                        within the social landscape, emphasizing a pronounced division between two major groups. 
+                        This approach provided a contrasting perspective, spotlighting either strong social divisions 
+                        or tightly bonded alliances between these two significant communities.<br><br>
+                        The algorithm's outcome offers users a different lens to explore the network's dynamics, 
+                        showcasing the broader segregation or cohesion within the student body. Understanding the 
+                        nuanced differences between Girvan-Newman and Louvain's interpretations provides a 
+                        comprehensive view of the diverse structures and potential social divisions shaping 
+                        the high school's social network.
+                    </p>
+                </div>
+                <div id="panel15">
+                    <img src="{{ url_for('static', filename='img/ss6.svg') }}" alt="" class="ss_size">
+                </div>
+                <div id="panel16">
+                    <p class="panel_head">
+                        Modularity Optimisation Algorithm
+                    </p>
+                    <p class="panel_content">
+                        The modularity optimization algorithm navigated the high school social network, 
+                        meticulously examining friendships represented by node connections. It aimed to 
+                        identify cohesive communities while maximizing internal connections and minimizing 
+                        connections between clusters.<br><br>
+                        In its exploration, modularity optimization uncovered a network divided into four 
+                        distinct communities. These clusters highlighted groups of students closely linked 
+                        by friendships and shared interests, providing a nuanced view of the school's social 
+                        fabric.<br><br>
+                        Unlike Girvan-Newman's binary division or Louvain's multiple clusters, modularity 
+                        optimization struck a balance, revealing four communities that showcased both cohesion 
+                        within smaller groups and distinguishable boundaries between them. This approach 
+                        offered a middle ground, capturing a more granular view of the social dynamics 
+                        within the student body.<br><br>
+                        The algorithm's outcome invites users to delve into these four communities, 
+                        understanding the interplay of friendships and shared affiliations that define each 
+                        cluster. Exploring these nuances enriches the understanding of the diverse structures 
+                        shaping the high school's social network, portraying a multifaceted landscape of 
+                        connections and interactions among its students.
+                    </p>
+                </div>
+                <div id="panel17">
+                    <img src="{{ url_for('static', filename='img/ss7.svg') }}" alt="" class="ss_size">
+                </div>
+                <div id="panel18">
+                    <p class="panel_head">
+                        Label Propagation Algorithm
+                    </p>
+                    <p class="panel_content">
+                        The label propagation algorithm navigated the high school social network, aiming to 
+                        identify communities by spreading labels across interconnected nodes. It revealed six 
+                        distinct clusters, each representing cohesive groups formed by shared connections and 
+                        friendships.<br><br>
+                        Diverging from previous methods, label propagation adopted a decentralized approach, 
+                        allowing nodes to adapt labels based on immediate connections. This method showcased 
+                        a more intricate segmentation of the network, emphasizing the adaptable nature of 
+                        social relationships among students.<br><br>
+                        By uncovering six diverse communities, this algorithm provided a nuanced view of the 
+                        school's social fabric. Its decentralized label adoption mirrored the fluidity of 
+                        friendships, capturing a rich tapestry of social clusters within the student body.<br><br>
+                        Exploring these clusters reveals the dynamic nature of social affiliations and 
+                        interactions. The algorithm's decentralized approach offers insights into the 
+                        adaptable nature of social groupings, enriching the understanding of the complex 
+                        social dynamics shaping the high school network.
+                    </p>
+                </div>
+                <div id="panel19">
+                    <img src="{{ url_for('static', filename='img/ss8.svg') }}" alt="" class="ss_size">
+                </div>
+                <div id="panel20">
+                    <p class="panel_head">
+                        Conclusion
+                    </p>
+                    <p class="panel_content">
+                        The diverse outcomes from the four algorithms—Louvain, Girvan-Newman, modularity 
+                        optimization, and label propagation—illuminate the multifaceted nature of the high 
+                        school social network. Louvain's multiple clusters showcased varied but interconnected 
+                        communities, Girvan-Newman's binary division emphasized clear polarization, modularity 
+                        optimization struck a balance with cohesive yet distinguishable communities, and label 
+                        propagation revealed a fluid, decentralized network with several nuanced clusters.<br><br>
+                        These distinct perspectives underscore the complexity of social dynamics among high 
+                        school students. While Louvain and modularity optimization highlighted cohesive groups 
+                        with varying degrees of connectivity, Girvan-Newman's binary outcome hinted at potential 
+                        strong divisions or alliances. In contrast, label propagation portrayed a fluid, adaptable 
+                        network reflecting the ever-changing nature of social relationships.<br><br>
+                        The amalgamation of these outcomes paints a rich tapestry of the high school's social 
+                        fabric, illustrating the intricate interplay of friendships, shared interests, and social 
+                        circles. Understanding these diverse interpretations offers a comprehensive view of the 
+                        network's structures, dynamics, and potential divisions, emphasizing the need for nuanced 
+                        analyses to capture the nuanced nature of adolescent social interactions.
+                    </p>
+                </div>
+            </div>
+            <div class="csBarea">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 51" fill="none" class="butt" onclick="gof1()">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.4153 49.5847C28.195 48.3643 28.195 46.3857 29.4153 45.1653L45.9556 28.625L3.49998 28.625C1.77404 28.625 0.374975 27.2259 0.374975 25.5C0.374975 23.774 1.77404 22.375 3.49998 22.375L45.9556 22.375L29.4153 5.83462C28.195 4.6143 28.195 2.63555 29.4153 1.41524C30.6356 0.194923 32.6144 0.194923 33.8347 1.41524L55.7098 23.2903C56.2958 23.8762 56.6251 24.6712 56.6251 25.5C56.6251 26.3287 56.2958 27.1237 55.7098 27.7097L33.8347 49.5847C32.6144 50.8051 30.6356 50.8051 29.4153 49.5847Z" fill="white"/>
+                    </svg>
+            </div>
+        </div>
+    </div>
+    <div id="oc">
+        <p id="p4">
+            Our Creators
+        </p>
+        <div id="oc_container">
+            <div class="oc_cards">
+                <div class="photoArea">
+                    <img src="{{ url_for('static', filename='img/Aranya.svg') }}" alt="" srcset="" class="dp">
+                </div>
+                <p class="p5">
+                    Aranya Maji
+                </p>
+                <p class="p5">
+                    21103005
+                </p>
+            </div>
+            <div class="oc_cards">
+                <div class="photoArea">
+                    <img src="{{ url_for('static', filename='img/Gargi.svg') }}" alt="" srcset="" class="dp">
+                </div>
+                <p class="p5">
+                    Gargi Jain
+                </p>
+                <p class="p5">
+                    21103018
+                </p>
+            </div>
+            <div class="oc_cards">
+                <div class="photoArea">
+                    <img src="{{ url_for('static', filename='img/Ishita.svg') }}" alt="" srcset="" class="dp">
+                </div>
+                <p class="p5">
+                    Ishita Sethi
+                </p>
+                <p class="p5">
+                    21103006
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/particles.js') }}"></script>
+</body>
+</html>
