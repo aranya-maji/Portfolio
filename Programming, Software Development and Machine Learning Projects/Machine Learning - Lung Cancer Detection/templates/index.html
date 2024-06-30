@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+    <title>Gardiens des Poumons</title>
+</head>
+<body>
+    <div id="navbar">
+        <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="Image" id="logo1">
+        <div id="select">
+            <div class="button1" id="b1_1" onmouseenter="hovin('b1_1','p1_1')" onmouseleave="hovout('b1_1','p1_1')" onclick="scroller('om')">
+                <p class="p1" id="p1_1">
+                    Our Model
+                </p>
+            </div>
+            <div class="button1" id="b1_2" onmouseenter="hovin('b1_2','p1_2')" onmouseleave="hovout('b1_2','p1_2')" onclick="scroller('tio')">
+                <p class="p1" id="p1_2">
+                    Try it out
+                </p>
+            </div>
+            <div class="button1" id="b1_3" onmouseenter="hovin('b1_3','p1_3')" onmouseleave="hovout('b1_3','p1_3')" onclick="scroller('oc')">
+                <p class="p1" id="p1_3">
+                    Our Creators
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="banner" onmouseenter="bannerin('banner','p2')" onmouseout="bannerout('banner','p2')">
+        <div id="banner_img">
+            <img src="{{ url_for('static', filename='img/banner.svg') }}" alt="Image" id="banner1">
+        </div>
+    </div>
+    <div id="text1" onmouseenter="bannerin('banner','p2')" onmouseout="bannerout('banner','p2')">
+        <p id="p2" onmouseenter="bannerin('banner','p2')" onmouseout="bannerout('banner','p2')">
+            Are you at risk?
+        </p>
+    </div>
+    <div id="om" data-accuracy="{{ accuracy }}">
+        <div id="om_heading">
+            <p id="p3">
+                Our Model
+            </p>
+        </div>
+        <div id="om_text">
+            <p id="p4">
+                Lorem ipsum dolor sit amet consectetur.
+                Blandit nunc morbi eget commodo quis rutrum integer.
+                Fermentum vitae mauris convallis natoque neque ut maecenas
+                amet. Amet scelerisque venenatis mi sapien id luctus
+                placerat mattis sed. Amet eget arcu quis faucibus sapien
+                risus. Nisl ac elit feugiat ac vitae proin aliquam mi at.
+            </p>
+        </div>
+        <div id="meter">
+            <div class="progress">
+                <div class="barOverflow">
+                  <div id="bar"></div>
+                </div>
+                <span id="acc"></span>
+            </div>
+            <p id="p5">
+                Accuracy
+            </p>
+        </div>
+        <div id="graph">
+            <div id="uparea" onclick="goup()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="60" viewBox="0 0 55 60" fill="none">
+                    <path d="M15.6132 23.5706C14.849 23.1885 13.9204 23.521 13.5724 24.3014L0.993974 52.5074C-1.00727 56.995 3.43659 61.65 7.60001 59.4269L25.3117 49.9706C26.6893 49.2349 28.3106 49.2349 29.6882 49.9706L47.3999 59.4269C51.5634 61.65 56.0072 56.995 54.0061 52.5074L49.2908 41.9339C48.725 40.6655 47.7365 39.6322 46.4942 39.0112L15.6132 23.5706Z" fill="#1C274C"/>
+                    <path opacity="0.5" d="M17.3296 19.3993C16.6117 19.0403 16.3036 18.1798 16.6305 17.4467L23.0826 2.97854C24.8536 -0.992845 30.1469 -0.992845 31.9182 2.97854L43.8223 29.6725C44.3959 30.9587 43.0411 32.255 41.7813 31.6253L17.3296 19.3993Z" fill="#1C274C"/>
+                </svg>
+            </div>
+            <div id="big_container">
+                <div id="container1">
+                    <div class="img_frame">
+                        <img src="static/image1/plot15.png" alt="" srcset="" class="img_graph">
+                    </div>
+                    <div class="img_frame">
+                        <img src="static/image1/plot.png" alt="" srcset="" class="img_graph">
+                    </div>
+                    <div class="img_frame">
+                        <img src="static/image1/plot1.png" alt="" srcset="" class="img_graph">
+                    </div>
+                    <div class="img_frame">
+                        <img src="static/image1/plot2.png" alt="" srcset="" class="img_graph">
+                    </div>
+                </div>
+                <div id="container2">
+                    <div class="img_frame">
+                        <img src="static/image1/plot3.png" alt="" srcset="" class="img_graph">
+                    </div>
+                    <div class="img_frame">
+                        <img src="static/image1/plot4.png" alt="" srcset="" class="img_graph">
+                    </div>
+                    <div class="img_frame">
+                        <img src="static/image1/plot5.png" alt="" srcset="" class="img_graph">
+                    </div>
+                    <div class="img_frame">
+                        <img src="static/image1/plot6.png" alt="" srcset="" class="img_graph">
+                    </div>
+                </div>
+                <div id="container3">
+                    <div class="img_frame">
+                        <img src="static/image1/plot7.png" alt="" srcset="" class="img_graph">
+                    </div>
+                    <div class="img_frame">
+                        <img src="static/image1/plot8.png" alt="" srcset="" class="img_graph">
+                    </div>
+                    <div class="img_frame">
+                        <img src="static/image1/plot9.png" alt="" srcset="" class="img_graph">
+                    </div>
+                    <div class="img_frame">
+                        <img src="static/image1/plot10.png" alt="" srcset="" class="img_graph">
+                    </div>
+                </div>
+                <div id="container4">
+                    <div class="img_frame">
+                        <img src="static/image1/plot11.png" alt="" srcset="" class="img_graph">
+                    </div>
+                    <div class="img_frame">
+                        <img src="static/image1/plot12.png" alt="" srcset="" class="img_graph">
+                    </div>
+                    <div class="img_frame">
+                        <img src="static/image1/plot13.png" alt="" srcset="" class="img_graph">
+                    </div>
+                    <div class="img_frame">
+                        <img src="static/image1/plot14.png" alt="" srcset="" class="img_graph">
+                    </div>
+                </div>
+            </div>
+            <div id="downarea" onclick="godown()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="60" viewBox="0 0 55 60" fill="none">
+                    <path d="M15.6132 36.4293C14.849 36.8114 13.9204 36.4789 13.5724 35.6985L0.993974 7.49249C-1.00727 3.00494 3.43659 -1.65001 7.60001 0.573061L25.3117 10.0294C26.6893 10.765 28.3106 10.765 29.6882 10.0294L47.3999 0.573061C51.5634 -1.65001 56.0072 3.00494 54.0061 7.49249L49.2908 18.066C48.725 19.3345 47.7365 20.3677 46.4942 20.9887L15.6132 36.4293Z" fill="#1C274C"/>
+                    <path opacity="0.5" d="M17.3296 40.6007C16.6116 40.9597 16.3035 41.8202 16.6305 42.5533L23.0826 57.0215C24.8535 60.9928 30.1469 60.9928 31.9182 57.0215L43.8223 30.3275C44.3959 29.0413 43.041 27.745 41.7813 28.3747L17.3296 40.6007Z" fill="#1C274C"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <form action="/predict" method="POST" id="tio">
+        <div id="tio_heading">
+            <p id="p6">
+                Try it out
+            </p>
+        </div>
+        <div id="tio_text">
+            <div class="entry">
+                <input class="fields" type="number" step="any" min="0" max="1" placeholder="Enter 0 for Male and 1 for Female" name="feature1" required>
+            </div>
+            <div class="entry">
+                <input class="fields" type="number" step="any" min="0" placeholder="Enter Age" name="feature2" required>
+            </div>
+            <div class="entry">
+                <input class="fields" type="number" step="any" min="1" max="2" placeholder="Smoking: 1 for No and 2 for Yes" name="feature3" required>
+            </div>
+            <div class="entry">
+                <input class="fields" type="number" step="any" min="1" max="2" placeholder="Yellow Fingers: 1 for No and 2 for Yes" name="feature4" required>
+            </div>
+            <div class="entry">
+                <input class="fields" type="number" step="any" min="1" max="2" placeholder="Anxiety: 1 for No and 2 for Yes" name="feature5" required>
+            </div>
+            <div class="entry">
+                <input class="fields" type="number" step="any" min="1" max="2" placeholder="Peer Pressure: 1 for No and 2 for Yes" name="feature6" required>
+            </div>
+            <div class="entry">
+                <input class="fields" type="number" step="any" min="1" max="2" placeholder="Chronic Disease: 1 for No and 2 for Yes" name="feature7" required>
+            </div>
+            <div class="entry">
+                <input class="fields" type="number" step="any" min="1" max="2" placeholder="Fatigue: 1 for No and 2 for Yes" name="feature8" required>
+            </div>
+            <div class="entry">
+                <input class="fields" type="number" step="any" min="1" max="2" placeholder="Allergy: 1 for No and 2 for Yes" name="feature9" required>
+            </div>
+            <div class="entry">
+                <input class="fields" type="number" step="any" min="1" max="2" placeholder="Wheezing: 1 for No and 2 for Yes" name="feature10" required>
+            </div>
+            <div class="entry">
+                <input class="fields" type="number" step="any" min="1" max="2" placeholder="Alcohol Consumption: 1 for No and 2 for Yes" name="feature11" required>
+            </div>
+            <div class="entry">
+                <input class="fields" type="number" step="any" min="1" max="2" placeholder="Coughing: 1 for No and 2 for Yes" name="feature12" required>
+            </div>
+            <div class="entry">
+                <input class="fields" type="number" step="any" min="1" max="2" placeholder="Shortness of Breath: 1 for No and 2 for Yes" name="feature13" required>
+            </div>
+            <div class="entry">
+                <input class="fields" type="number" step="any" min="1" max="2" placeholder="Swallowing Difficulty: 1 for No and 2 for Yes" name="feature14" required>
+            </div>
+            <div class="entry">
+                <input class="fields" type="number" step="any" min="1" max="2" placeholder="Chest Pain: 1 for No and 2 for Yes" name="feature15" required>
+            </div>
+        </div>
+        <div id="tio_buttonarea">
+            <button type="submit" id="submit">
+                <p id="p7">
+                    Predict
+                </p>
+            </button>
+        </div>
+    </form>
+    <div id="oc">
+        <div id="oc_heading">
+            <p id="p8">
+                Our Creators
+            </p>
+        </div>
+        <div id="oc_container">
+            <div class="card">
+                <div class="photo">
+                    <img src="{{ url_for('static', filename='img/Aranya.svg') }}" alt="Image" class="img_photo">
+                </div>
+                <div class="namearea">
+                    <p class="p9">
+                        Aranya Maji
+                    </p>
+                </div>
+                <div class="enrollarea">
+                    <p class="p10">
+                        21103005
+                    </p>
+                </div>
+                <div class="oc_text">
+                    <p class="p11">
+                        Lorem ipsum dolor sit amet consectetur. 
+                        Faucibus euismod nibh morbi dictum ut. 
+                        Consectetur pellentesque eu turpis urna nulla. 
+                        Sodales tincidunt in ac mollis elementum.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="photo">
+                    <img src="{{ url_for('static', filename='img/Gargi.svg') }}" alt="Image" class="img_photo">
+                </div>
+                <div class="namearea">
+                    <p class="p9">
+                        Gargi Jain
+                    </p>
+                </div>
+                <div class="enrollarea">
+                    <p class="p10">
+                        21103018
+                    </p>
+                </div>
+                <div class="oc_text">
+                    <p class="p11">
+                        Lorem ipsum dolor sit amet consectetur. 
+                        Faucibus euismod nibh morbi dictum ut. 
+                        Consectetur pellentesque eu turpis urna nulla. 
+                        Sodales tincidunt in ac mollis elementum.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="photo">
+                    <img src="{{ url_for('static', filename='img/Ishita.svg') }}" alt="Image" class="img_photo">
+                </div>
+                <div class="namearea">
+                    <p class="p9">
+                        Ishita Sethi
+                    </p>
+                </div>
+                <div class="enrollarea">
+                    <p class="p10">
+                        21103006
+                    </p>
+                </div>
+                <div class="oc_text">
+                    <p class="p11">
+                        Lorem ipsum dolor sit amet consectetur. 
+                        Faucibus euismod nibh morbi dictum ut. 
+                        Consectetur pellentesque eu turpis urna nulla. 
+                        Sodales tincidunt in ac mollis elementum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer_text">
+            <div id="footer_heading">
+                <p id="p12">
+                    Lung Cancer Detection Using Random Forest Algorithm
+                </p>
+            </div>
+            <div id="footer_detail">
+                <p id="p13">
+                    Lorem ipsum dolor sit amet consectetur. 
+                    Et malesuada nunc sit volutpat. Convallis 
+                    purus sagittis maecenas ipsum diam amet euismod 
+                    urna felis. Risus tincidunt pulvinar quis tristique 
+                    porta nunc felis at. Turpis feugiat lorem amet 
+                    ultrices mattis duis semper maecenas. Risus eu 
+                    pretium malesuada pharetra vestibulum accumsan nibh. 
+                    Nunc nisi dui id pulvinar proin id non blandit. Metus 
+                    id adipiscing suspendisse quam. Vulputate aliquet amet 
+                    duis diam cursus nulla imperdiet gravida. Viverra eget 
+                    ut cursus arcu mi habitasse feugiat gravida purus. 
+                    Auctor est in dolor et habitant accumsan. Adipiscing 
+                    urna venenatis ante arcu tristique sit. A suscipit 
+                    in nibh habitasse enim mauris massa.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <script>
+        document.getElementById("om").addEventListener("mouseenter", function() {
+            var accuracyValue = this.getAttribute("data-accuracy");
+            meter(accuracyValue);
+        });
+    </script>
+</body>
+</html>

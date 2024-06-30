@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    display: flex;
+    padding: 0px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 850px;
+    align-self: stretch;
+    background: #51879F;
+}
+
+#logo1{
+    width: 177.6px;
+    height: 100px;
+}
+
+#select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.button1{
+    display: flex;
+    width: 179.8px;
+    padding: 10px 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+.p1{
+    flex: 1 0 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Inika;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+#banner_img{
+    display: flex;
+    padding: 0px 409px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: linear-gradient(to bottom right, #6FA8B9 0%, #205268 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #6FA8B9 0%, #205268 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #6FA8B9 0%, #205268 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #6FA8B9 0%, #205268 50%) top right / 50% 50% no-repeat;
+    filter: blur(0px);
+}
+
+#banner1{
+    width: 889.323px;
+    height: 500px;
+}
+
+#text1{
+    display: flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    position: absolute;
+    left: 385px;
+    top: 250px;
+}
+
+#p2{
+    color: transparent;
+    text-align: center;
+    font-family: Inika;
+    font-size: 125px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+#om{
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+
+#om_heading{
+    display: flex;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+#p3{
+    color: #000;
+    text-align: center;
+    font-family: Inika;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+#om_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+}
+
+#p4{
+    align-self: stretch;
+    color: #000;
+    font-family: Inika;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+#meter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    padding: 50px;
+}
+
+.progress {
+    position: relative;
+    margin: 4px;
+    float: left;
+    text-align: center;
+}
+.barOverflow {
+    /* Wraps the rotating .bar */
+    position: relative;
+    overflow: hidden; /* Comment this line to understand the trick */
+    width: 360px;
+    height: 180px; /* Half circle (overflow) */
+    margin-bottom: -45px; /* bring the numbers up */
+}
+#bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 360px; /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 10px solid #eee; /* half gray, */
+    border-bottom-color: #0bf; /* half azure */
+    border-right-color: #0bf;
+    rotate: 45deg;
+}
+
+#acc{
+    font-family: Inika;
+    font-size: 20px;
+}
+
+#p5{
+    margin: 0;
+    padding: 0;
+    font-family: Inika;
+    font-size: 30px;
+}
+
+#graph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+
+#uparea{
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 20px;
+    background: #BFBFBF;
+}
+
+#downarea{
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 20px;
+    background: #BFBFBF;
+}
+
+#big_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+#container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 400px;
+}
+
+#container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 400px;
+}
+
+#container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 400px;
+}
+
+#container4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 400px;
+}
+
+.img_frame{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+}
+
+.img_graph{
+    width: 400px;
+    height: auto;
+    align-self: stretch;
+}
+
+#tio{
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    margin: 0;
+}
+
+#tio_heading{
+    display: flex;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+#p6{
+    color: #000;
+    text-align: center;
+    font-family: Inika;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+#tio_text{
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.entry{
+    display: flex;
+    padding: 0px 500px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.fields{
+    display: flex;
+    height: 55.667px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 20px;
+    background: #BFBFBF;
+    margin: 0;
+    font-family: Inika;
+    font-size: 30px;
+    border-width: 0;
+    text-decoration: none;
+    caret-color: transparent;
+}
+
+.fields::selection{
+    display: flex;
+    height: 55.667px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 20px;
+    background: #BFBFBF;
+    margin: 0;
+    font-family: Inika;
+    font-size: 30px;
+    border-width: 0;
+    text-decoration: none;
+    caret-color: transparent;
+    background-color: transparent;
+}
+
+.fields::placeholder{
+    display: flex;
+    height: 55.667px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 20px;
+    background: #BFBFBF;
+    margin: 0;
+    font-family: Inika;
+    font-size: 20px;
+    border-width: 0;
+    text-decoration: none;
+    caret-color: transparent;
+}
+
+#tio_buttonarea{
+    display: flex;
+    padding: 0px 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+#submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 20px;
+    background: #BFBFBF;
+}
+
+#p7{
+    color: #000;
+    text-align: center;
+    font-family: Inika;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+#oc{
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+
+#oc_heading{
+    display: flex;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+#p8{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    text-align: center;
+    font-family: Inika;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#oc_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.card{
+    display: flex;
+    padding: 50px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 1 0 0;
+    border-radius: 20px;
+    background: #BFBFBF;
+}
+
+.photo{
+    display: flex;
+    width: 270px;
+    height: 270px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 250px;
+    background: #FFF;
+    overflow: hidden;
+}
+
+.img_photo{
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.namearea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.p9{
+    margin: 0;
+    padding: 0;
+    flex: 1 0 0;
+    color: #000;
+    text-align: center;
+    font-family: Inika;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.enrollarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.p10{
+    flex: 1 0 0;
+    color: #000;
+    text-align: center;
+    font-family: Inika;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.oc_text{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.p11{
+    align-self: stretch;
+    color: #000;
+    text-align: center;
+    font-family: Inika;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#footer{
+    display: flex;
+    padding: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: #6FA8B9;
+}
+
+#footer_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+
+#footer_heading{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+#p12{
+    align-self: stretch;
+    color: #000;
+    text-align: center;
+    font-family: Inika;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+#footer_detail{
+    display: flex;
+    padding: 10px 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+#p13{
+    flex: 1 0 0;
+    color: #000;
+    text-align: center;
+    font-family: Inika;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}

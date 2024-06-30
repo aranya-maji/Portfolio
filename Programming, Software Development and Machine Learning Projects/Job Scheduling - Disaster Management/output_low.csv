@@ -1,0 +1,15 @@
+Process ID,Name,Age,Gender,Arrival Time,Location,Area_size,Severe,Distype,Burst Time,Waiting_time,Turnaround_time,Priority
+13,Liam,28,Male,8,Location2,140,Severe,Earthquake,3,0,3,7
+33,Liam,28,Male,8,Location2,140,Severe,Earthquake,3,3,6,9
+73,Liam,28,Male,8,Location2,140,Severe,Earthquake,3,6,9,9
+149,Liam,28,Male,8,Location2,140,Severe,Earthquake,3,9,12,9
+189,Liam,28,Male,8,Location2,140,Severe,Earthquake,3,12,15,9
+229,Liam,28,Male,8,Location2,140,Severe,Earthquake,3,15,18,9
+269,Liam,28,Male,8,Location2,140,Severe,Earthquake,3,18,21,9
+288,Liam,28,Male,8,Location2,140,Severe,Earthquake,3,21,24,9
+328,Liam,28,Male,8,Location2,140,Severe,Earthquake,3,24,27,9
+368,Liam,28,Male,8,Location2,140,Severe,Earthquake,3,27,30,9
+408,Liam,28,Male,8,Location2,140,Severe,Earthquake,3,30,33,9
+448,Liam,28,Male,8,Location2,140,Severe,Earthquake,3,33,36,9
+468,Liam,28,Male,8,Location2,140,Severe,Earthquake,3,36,39,9
+518,Liam,28,Male,8,Location2,140,Severe,Earthquake,3,39,42,9
