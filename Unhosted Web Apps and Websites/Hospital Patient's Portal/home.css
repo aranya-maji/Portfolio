@@ -1,0 +1,349 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+}
+
+.imageBanner
+{
+    display: flex;
+    height: 35%;
+}
+
+.logo
+{
+    display: flex;
+    width: 20%;
+}
+
+.gap
+{
+    display: flex;
+    width: 30%;
+}
+
+.who
+{
+    display: flex;
+    width: 50%;
+}
+
+.captionBanner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Bankgothic md bt;
+    font-size: 250%;
+    height: 20%;
+    user-select: none;
+}
+
+.marquee
+{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: Bankgothic md bt;
+    font-size: 120%;
+    background-color: rgb(0, 143, 214);
+    color: white;
+    user-select: none;
+}
+
+.partition
+{
+    display: flex;
+    height: 100%;
+    width: 2%;
+}
+
+.PAArea
+{
+    display: flex;
+    width: 48%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(0, 143, 214);
+}
+.greet
+{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: Bankgothic md bt;
+    font-size: 120%;
+    color: white;
+    user-select: none;
+}
+
+.form
+{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+    font-family: Bankgothic md bt;
+    font-size: 120%;
+    color: white;
+}
+
+.PAButtonArea
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: Bankgothic md bt;
+    font-size: 120%;
+    color: white;
+}
+
+.PAButton
+{
+    display: flex;
+    height: 80px;
+    width: 150px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    justify-content: center;
+    align-items: center;
+    font-family: Bankgothic md bt;
+    font-size: 30%;
+    color: white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    background-color: rgb(148, 148, 184);
+}
+
+.PAButton:hover
+{
+    display: flex;
+    height: 90px;
+    width: 168.75px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    justify-content: center;
+    align-items: center;
+    font-family: Bankgothic md bt;
+    font-size: 33.75%;
+    color: white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    background-color: rgb(148, 148, 184);
+}
+
+.promoBanner
+{
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.optionBar
+{
+    display: flex;
+    height: 10%;
+    background-color: rgb(0, 143, 214);
+}
+
+.optionArea
+{
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    font-family: Bankgothic md bt;
+    font-size: 33.75%;
+}
+
+.pathology
+{
+    display: flex;
+    height: 20%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    font-family: Bankgothic md bt;
+    font-size: 350%;
+    user-select: none;
+    cursor: pointer;
+}
+
+.pathologyButton
+{
+    display: flex;
+    font-size: 90%;
+    border-radius: 10px;
+    background-color: rgb(148, 148, 184);
+    color: white;
+    font-family: Bankgothic md bt;
+    width: 60%;
+    border-color: grey;
+    border-style: solid;
+    border-width: 1.5px;
+    transition-duration: 0.5s;
+    user-select: none;
+    cursor: pointer;
+}
+
+.pathologyButton:hover
+{
+    display: flex;
+    font-size: 90%;
+    border-radius: 10px;
+    background-color: rgb(101, 101, 122);
+    color: white;
+    font-family: Bankgothic md bt;
+    width: 60%;
+    border-color: grey;
+    border-style: solid;
+    border-width: 1.5px;
+    transition-duration: 0.5s;
+    user-select: none;
+    cursor: pointer;
+}
+
+.departments
+{
+    display: flex;
+    height: 20%;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    font-family: Bankgothic md bt;
+    font-size: 350%;
+    user-select: none;
+    cursor: pointer;
+}
+
+.services
+{
+    display: flex;
+    height: 20%;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    font-family: Bankgothic md bt;
+    font-size: 350%;
+    user-select: none;
+    cursor: pointer;
+}
+
+.contactUs
+{
+    display: flex;
+    height: 20%;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    font-family: Bankgothic md bt;
+    font-size: 350%;
+    user-select: none;
+    cursor: pointer;
+}
+
+.foundersHeading
+{
+    display: flex;
+    height: 10%;
+    font-family: Bankgothic md bt;
+    font-size: 300%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(0, 143, 214);
+}
+
+.foundersArea
+{
+    display: flex;
+    height: 80%;
+    font-family: Bankgothic md bt;
+    font-size: 100%;
+    color: white;
+    background-image: linear-gradient(180deg, rgb(0, 143, 214), rgb(81, 81, 231));
+}
+
+.foundersCompartment
+{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    border-style: solid;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-color: rgb(81, 81, 231);
+    user-select: none;
+}
+
+.foundersImageArea
+{
+    display: flex;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.foundersImage
+{
+    display: flex;
+    height: 225px;
+    width: 225px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    overflow: hidden;
+}
+
+.foundersImage:hover
+{
+    display: flex;
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    overflow: hidden;
+}
+
+.foundersTextArea
+{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot
+{
+    display: flex;
+    height: 5%;
+    background-color: rgb(81, 81, 231);
+}
