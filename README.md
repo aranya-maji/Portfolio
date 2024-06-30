@@ -11,6 +11,6 @@ Recipebook Website - https://community-kitchen-global.web.app
 
 # Game Development Hub Websites:-
 
-https://game-development-hub-jiit.web.app
+Main Website:- https://game-development-hub-jiit.web.app
 
-https://game-development-hub-arena.web.app
+Tournament Website:- https://game-development-hub-arena.web.app
