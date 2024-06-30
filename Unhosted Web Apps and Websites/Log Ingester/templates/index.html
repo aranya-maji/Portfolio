@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>Log checker</title>
+</head>
+<body>
+    <form id="options" action="/get_logs" method="POST">
+        <div class="box1">
+            Search in
+        </div>
+        <div class="box2">
+            <input type="checkbox" value="level" name="field">
+            Level
+            <div id="content">
+                <input type="text" id="value" name="level">
+            </div>
+        </div>
+        <div class="box2">
+            <input type="checkbox" value="message" name="field">
+            Message
+            <div id="content">
+                <input type="text" id="value" name="message">
+            </div>
+        </div>
+        <div class="box2">
+            <input type="checkbox" value="resourceId" name="field">
+            Resource Id
+            <div id="content">
+                <input type="text" id="value" name="resourceId" placeholder="If you want to enter a range of resourceId, then separate them by a comma">
+            </div>
+        </div>
+        <div class="box2">
+            <input type="checkbox" value="timestamp" name="field">
+            Timestamp
+            <div id="content">
+                <input type="text" id="value" name="timestamp" placeholder="If you want to enter a range of timestamp, then separate them by a comma">
+            </div>
+        </div>
+        <div class="box2">
+            <input type="checkbox" value="traceId" name="field">
+            Trace Id
+            <div id="content">
+                <input type="text" id="value" name="traceId" placeholder="If you want to enter a range of traceId, then separate them by a comma">
+            </div>
+        </div>
+        <div class="box2">
+            <input type="checkbox" value="spanId" name="field">
+            Span Id
+            <div id="content">
+                <input type="text" id="value" name="spanId" placeholder="If you want to enter a range of spanId, then separate them by a comma">
+            </div>
+        </div>
+        <div class="box2">
+            <input type="checkbox" value="commit" name="field">
+            Commit
+            <div id="content">
+                <input type="text" id="value" name="commit" placeholder="If you want to enter a range of commit, then separate them by a comma">
+            </div>
+        </div>
+        <div class="box2">
+            <input type="checkbox" value="metadata" name="field">
+            Metadata
+            <div id="content">
+                <input type="text" id="value" name="metadata" placeholder="If you want to enter a range of metadata, then separate them by a comma">
+            </div>
+        </div>
+        <div class="box2">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
