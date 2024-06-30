@@ -9,6 +9,8 @@ Personal Portfolio Website:- https://aranyamaji-0728.web.app
 
 Recipebook Website - https://community-kitchen-global.web.app
 
+School Website:- https://sjs-ntpc-clg.web.app
+
 # Game Development Hub Websites:-
 
 Main Website:- https://game-development-hub-jiit.web.app
