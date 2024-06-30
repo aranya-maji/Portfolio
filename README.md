@@ -20,3 +20,5 @@ Tournament Website:- https://game-development-hub-arena.web.app
 # Miscellaneous Websites:-
 
 https://purtee-kohli.web.app
+
+NOTE:- There are few projects that were not included in this portfolio due to client priviledges.
