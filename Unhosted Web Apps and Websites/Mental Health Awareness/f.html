@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stress Guidelines</title>
+	
+	<style>
+		body 
+		{
+		background-color:rgb(2, 13, 41);
+		}
+		.container {
+			margin: 20px auto;
+			max-width: 600px;
+			padding: 20px;
+			background-color: #f2f2f2;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			text-align: center;
+		}
+		h1 {
+			font-size: 32px;
+			margin-bottom: 20px;
+		}
+		p {
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		.button {
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			font-size: 20px;
+			cursor: pointer;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Stress Guidelines</h1>
+		<p id="stress-level"></p>
+		<p id="guidelines"></p>
+		<button class="button" onclick="checkStress()">Check Stress Level</button>
+	</div>
+
+	<script>
+		function checkStress() {
+			let stressLevel = parseFloat(prompt("Enter your stress level (0-10):"));
+			let guidelines = "";
+
+			if (stressLevel >= 0 && stressLevel<3) {
+				guidelines = "Your stress level is low. Keep up the good work!.";
+			} else if (stressLevel >= 3 && stressLevel <= 5) {
+				guidelines = "Your stress level is moderate. Some things you can do to manage stress include talking to friends and parents, spending more time in nature, and listening to podcasts.";
+			} else if (stressLevel <=10 && stressLevel>5) {
+				guidelines = "Your stress level is high. It is recommended that you seek medical surveillance and talk to a therapist to help with dealing with depression. In the meantime — Call 1800-599-0019 to reach KIRAN, a 24/7 national helpline set by the ministry of social justice . You can also mail icall@tiss.edu or dial 022-25521111 (Monday-Saturday, 8am to 10pm) to reach iCall, a psychosocial helpline set up by the Tata Institute of Social Sciences (TISS). You can find a longer list of helpline numbers on ";
+			} else {
+				guidelines = "Invalid input. Please enter a number between 0 and 10.";
+			}
+
+			document.getElementById("stress-level").innerHTML = "Your stress level is " + stressLevel + "/10";
+			document.getElementById("guidelines").innerHTML = guidelines;
+		}
+	</script>
+</body>
+</html>

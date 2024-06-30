@@ -1,0 +1,597 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  html{
+    height:100%;
+  }
+ body
+{
+   display: flex;
+   background-color:rgb(2, 13, 41);
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: white;
+}
+  .app{
+  background-image: -webkit-linear-gradient(to bottom, #2C5364,rgb(14, 32, 77),rgb(2, 13, 41));  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to bottom, #2C5364, rgb(14, 32, 77),rgb(2, 13, 41));
+  height:100vh;
+  width:100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  }
+  ul{
+    display:block;
+    width:100%;
+    height:inherit;
+  }
+  ul{
+    list-style-type:none;
+  }
+  li:nth-child(1)
+  {
+    opacity: 0;
+    position:absolute;
+    left:10%;
+    height:30px;
+    width:30px;
+    background:rgba(255,255,255,.2);
+    animation:animate1 15s linear 1s infinite;
+  }
+  li:nth-child(2)
+  {
+    opacity: 0;
+    position:absolute;
+    left:30%;
+    height:45px;
+    width:45px;
+    background:rgba(255,255,255,.2);
+    animation:animate2 20s linear 1s infinite;
+  }
+  li:nth-child(3)
+  {
+    opacity: 0;
+    position:absolute;
+    left:50%;
+    height:70px;
+    width:70px;
+    background:rgba(255,255,255,.2);
+    animation:animate3 15s linear 1s infinite;
+  }
+  li:nth-child(4)
+  {
+    opacity: 0;
+    position:absolute;
+    left:80%;
+    height:20px;
+    width:20px;
+    background:rgba(255,255,255,.2);
+    animation:animate4 10s linear 1s infinite;
+  }
+  li:nth-child(5)
+  {
+    opacity: 0;
+    position:absolute;
+    left:0%;
+    height:70px;
+    width:70px;
+    background:rgba(255,255,255,.2);
+    animation:animate5 15s linear 1s infinite;
+  }
+  li:nth-child(6)
+  {
+    opacity: 0;
+    position:absolute;
+    left:65%;
+    height:35px;
+    width:35px;
+    background:rgba(255,255,255,.2);
+    animation:animate6 15s linear 1s infinite;
+  }
+  li:nth-child(7)
+  {
+    opacity: 0;
+    position:absolute;
+    left:90%;
+    height:70px;
+    width:70px;
+    background:rgba(255,255,255,.2);
+    animation:animate7 15s linear 1s infinite;
+  }
+  
+  @keyframes animate1{
+    from{
+      opacity: 1;
+      transform: translateY(+1000%) rotate(180deg)
+    }
+    to{
+      opacity: 1;
+      transform: translateY(-150%)
+        rotate(360deg)
+    }
+  }
+  @keyframes animate2{
+    from{
+      opacity: 1;
+      transform: translateY(+990%) rotate(180deg)
+    }
+    to{
+      opacity: 1;
+      transform: translateY(-150%)
+        rotate(360deg)
+    }
+  }
+  @keyframes animate3{
+    from{
+      opacity: 1;
+      transform: translateY(+960%) rotate(180deg)
+    }
+    to{
+      opacity: 1;
+      transform: translateY(-150%)
+        rotate(360deg)
+    }
+  }
+  @keyframes animate4{
+    from{
+      opacity: 1;
+      transform: translateY(+1500%) rotate(180deg)
+    }
+    to{
+      opacity: 1;
+      transform: translateY(-150%)
+        rotate(360deg)
+    }
+  }
+  @keyframes animate5{
+    0%{
+      opacity: 0;
+      transform: translateY(+600%) rotate(180deg)
+    }
+    50%{
+      opacity: 1;
+      transform: translateY(350%) rotate(270deg);
+    }
+    100%{
+      opacity: 0;
+      transform: translateY(100%)
+        rotate(360deg)
+    }
+  }
+  @keyframes animate6{
+    from{
+      opacity: 1;
+      transform: translateY(+960%) rotate(180deg)
+    }
+    to{
+      opacity: 1;
+      transform: translateY(-150%)
+        rotate(360deg)
+    }
+  }
+  @keyframes animate7{
+    0%{
+      opacity: 0;
+      transform: translateY(+1000%) rotate(180deg)
+    }
+    50%{
+      opacity: 1;
+      transform: translateY(650%) rotate(270deg);
+    }
+    100%{
+      opacity: 0;
+      transform: translateY(300%)
+        rotate(360deg)
+    }
+  }
+
+  
+h1 {
+    font-family: "Montserrat Medium";
+    font-size: 180px;
+    max-width: 40ch;
+    height: 100%;
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+  span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(5) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(7) {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  @media screen and (min-width: 1620px) {
+    .app,.text h1{ 
+        width:100%; 
+        height:100%;
+        font-size: 180px;
+    }
+}
+@media screen and (max-width: 1620px) and (min-width: 1024px) {
+    .app,.text h1{ 
+        width:100%;
+        height:100%;
+        font-size: 180px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .app,.text h1{ 
+        width:100%; 
+        height:48%;
+        font-size: 150px;
+    }
+}
+.text
+{
+  margin-top: 20;
+}
+.banner
+{
+  display: flex;
+  height: 10vh;
+  background-color: rgb(2,13,41);
+}
+
+.image
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+.chakra
+{
+  position: absolute;
+  top:0;
+}
+.crown
+{
+  position: absolute;
+  top:-10;
+}
+.crowndata
+{
+  position: absolute;
+  top:10px;
+  left:60px;
+  width:200px;
+  height:120px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+}
+.third_eye
+{
+  position: absolute;
+  top:90;
+}
+.thirdeyedata
+{
+  position: absolute;
+  top:5px;
+  left:-200px;
+  width:200px;
+  height:120px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+}
+.throat
+{
+  position: absolute;
+  top:190;
+}
+.throatdata
+{
+  position: absolute;
+  top:5px;
+  left:70px;
+  width:200px;
+  height:120px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+}
+.heart
+{
+  position: absolute;
+  top:280;
+}
+.heartdata
+{
+  position: absolute;
+  top:-3px;
+  left: -180px;
+  width:200px;
+  height:150px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+}
+.solar_plexus
+{
+  position: absolute;
+  top: 370;
+}
+.solarplexusdata
+{
+  position: absolute;
+  top:5px;
+  left:70px;
+  width:200px;
+  height:120px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+}
+.sacral
+{
+  position: absolute;
+  top: 450;
+}
+.sacraldata
+{
+  position: absolute;
+  top:-10px;
+  left: -200px;
+  width:200px;
+  height:150px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity:0;
+}
+.root
+{
+  position: absolute;
+  top:530;
+}
+.rootdata
+{
+  position: absolute;
+  top:5px;
+  left:70px;
+  width:200px;
+  height:120px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0; 
+}
+.boxes
+{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.crown_img:hover {
+  transform: scale(1.5);
+  transition: 1s;
+  box-shadow: 0 0 60px white;
+  border-radius: 100%;
+}
+.crown_img {
+  transition: 1s;
+}
+.crown_img:hover + .crowndata 
+{
+   opacity: 1;
+   transition: 3s;
+   transform: translate(25%, -40%);
+}
+.third_eye_img:hover{
+  transform: scale(1.5);
+  transition: 1s;
+  box-shadow: 0 0 60px white;
+  border-radius: 100%;
+}
+.third_eye_img {
+  transition: 1s;
+}
+.third_eye_img:hover + .thirdeyedata 
+{
+   opacity: 1;
+   transition: 3s;
+   transform: translate(-25%, -40%);
+}
+.throat_img:hover{
+  transform: scale(1.5);
+  transition: 1s;
+  box-shadow: 0 0 60px white;
+  border-radius: 100%;
+}
+.throat_img {
+  transition: 1s;
+}
+.throat_img:hover + .throatdata 
+{
+   opacity: 1;
+   transition: 3s;
+   transform: translate(20%, -40%);
+}
+.heart_img:hover{
+  transform: scale(1.5);
+  transition: 1s;
+  box-shadow: 0 0 60px white;
+  border-radius: 100%;
+}
+.heart_img {
+  transition: 1s;
+}
+.heart_img:hover + .heartdata 
+{
+   opacity: 1;
+   transition: 3s;
+   transform: translate(-20%, -40%);
+}
+.solar_plexus_img:hover{
+  transform: scale(1.5);
+  transition: 1s;
+  box-shadow: 0 0 60px white;
+  border-radius: 100%;
+}
+.solar_plexus_img {
+  transition: 1s;
+}
+.solar_plexus_img:hover + .solarplexusdata 
+{
+   opacity: 1;
+   transition: 3s;
+   transform: translate(20%, -40%);
+}
+.root_img:hover {
+  transform: scale(1.5);
+  transition: 1s;
+  box-shadow: 0 0 60px white;
+  border-radius: 100%;
+}
+.root_img {
+  transition: 1s;
+}
+.root_img:hover + .rootdata 
+{
+   opacity: 1;
+   transition: 3s;
+   transform: translate(20%, -40%);
+}
+.sacral_img:hover {
+  transform: scale(1.5);
+  transition: 1s;
+  box-shadow: 0 0 60px white;
+  border-radius: 100%;
+}
+.sacral_img {
+  transition: 1s;
+}
+.sacral_img:hover + .sacraldata 
+{
+   opacity: 1;
+   transition: 3s;
+   transform: translate(-20%, -40%);
+}
+@media only screen and (max-width: 980px) {
+  .image{ 
+      width:100%; 
+      height:50%;
+      font-size: 20x;
+  }
+}
+.fa { font-size: 19px; width: 20px; }
+
+.btn-slide { 
+    position: relative;
+    display: inline-block; 
+    height: 50px;
+    width: 260px;
+    line-height: 50px;
+    margin: 25px 0;
+    padding: 0px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,0.7);
+    background: linear-gradient(135deg, white 0%,rgba(255,255,255,.2) 100%);
+        }
+        
+.btn-slide:active { 
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0,0.7);
+    -webkit-transform: scale(0.98);
+    transform: scale(0.96); }
+    
+.btn-slide:hover { 
+    background: linear-gradient(-135deg, white 0%,rgba(255,255,255,.2) 100%); }
+        
+.btn-slide span.circle { 
+    display: block;
+    background-color: #fff;
+    color: rgb(2, 13, 41);
+    position: absolute;
+    margin: 5px;
+    height: 40px; 
+    width: 40px;
+    top: 0; left: 0;
+    border-radius: 50%;
+    transition: all 1.5s ease;
+ }
+        
+.btn-slide:hover span.circle { 
+    left: 100%;
+    margin-left: -45px;
+    background-color: #fff;
+    color: #79f1fc; }
+        
+.btn-slide span.title { 
+    font-family: 'Nunito Sans';
+    position: absolute;
+    left: 85px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+    transition: all 1.5s linear; 
+ }
+        
+.btn-slide span.title-hover { opacity: 0;}
+.btn-slide:hover span.title { opacity: 0; }
+.btn-slide:hover span.title-hover { opacity: 1; left: 60px; }   
+    
+@media (max-width: 540px) {
+  h1 { font-size: 36px; }
+  p { font-size: 20px; }
+  
+  .btn-slide { width: 240px; }
+}
