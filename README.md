@@ -14,3 +14,7 @@ Recipebook Website - https://community-kitchen-global.web.app
 Main Website:- https://game-development-hub-jiit.web.app
 
 Tournament Website:- https://game-development-hub-arena.web.app
+
+# Miscellaneous Websites:-
+
+https://purtee-kohli.web.app
