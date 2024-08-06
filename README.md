@@ -5,6 +5,8 @@ This repository showcases all the projects and certifications done by Aranya Maj
 
 AWS Certified Cloud Practitioner.
 
+# Projects
+
 All the projects are sorted accordingly in parts. Given below are few projects that are hosted in firebase:
 
 Personal Portfolio Website:- https://aranyamaji-0728.web.app
