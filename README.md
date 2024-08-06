@@ -1,5 +1,9 @@
 # Portfolio
-This repository showcases all the projects done by Aranya Maji.
+This repository showcases all the projects and certifications done by Aranya Maji.
+
+# Certifications
+
+AWS Certified Cloud Practitioner.
 
 All the projects are sorted accordingly in parts. Given below are few projects that are hosted in firebase:
 
