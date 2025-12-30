@@ -1,0 +1,30 @@
+[
+    {
+        "field": "Skill",
+        "repo": [
+            {
+                "subject": ".NET Developer",
+                "organisation": "Company",
+                "date": "10th November 2024",
+                "description": "I worked as an employee",
+                "logo": "/logos/nologo.png",
+                "logoWidth": "100",
+                "logoHeight": "100"
+            }
+        ]
+    },
+    {
+        "field": "Experience",
+        "repo": [
+            {
+                "subject": ".NET Developer 1",
+                "organisation": "Company 1",
+                "date": "10th November 2025",
+                "description": "I worked as an employee 1",
+                "logo": "/logos/nologo.png",
+                "logoWidth": "100",
+                "logoHeight": "100"
+            }
+        ]
+    }
+]
