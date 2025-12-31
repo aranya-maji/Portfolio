@@ -3,6 +3,36 @@
         "field": "Skill",
         "repo": [
             {
+                "subject": "C#",
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/CSharp.png",
+                "logoWidth": "100",
+                "logoHeight": "100"
+            },
+            {
+                "subject": ".NET",
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/DotNET.png",
+                "logoWidth": "100",
+                "logoHeight": "100"
+            },
+            {
+                "subject": "ReactJs",
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/React.png",
+                "logoWidth": "100",
+                "logoHeight": "100"
+            },
+            {
+                "subject": "AWS",
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/AWS.png",
+                "logoWidth": "100",
+                "logoHeight": "100"
+            },
+            {
+                "subject": "TS",
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/TS.png",
+                "logoWidth": "100",
+                "logoHeight": "100"
+            },
+            {
                 "subject": "JS",
                 "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/JS.png",
                 "logoWidth": "100",
@@ -38,6 +68,7 @@
     }
 
 ]
+
 
 
 
