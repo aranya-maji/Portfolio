@@ -61,6 +61,12 @@
                 "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/CSS.png",
                 "logoWidth": "100",
                 "logoHeight": "100"
+            },
+            {
+                "subject": "System Architecture & Design",
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/System_Architecture.png",
+                "logoWidth": "100",
+                "logoHeight": "100"
             }
         ]
     },
@@ -80,6 +86,7 @@
     }
 
 ]
+
 
 
 
