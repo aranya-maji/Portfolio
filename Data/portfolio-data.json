@@ -3,19 +3,19 @@
         "field": "Skill",
         "repo": [
             {
-                "subject": "JS"
+                "subject": "JS",
                 "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/JS.png",
                 "logoWidth": "100",
                 "logoHeight": "100"
             },
             {
-                "subject": "HTML"
+                "subject": "HTML",
                 "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/HTML.png",
                 "logoWidth": "100",
                 "logoHeight": "100"
             },
             {
-                "subject": "CSS"
+                "subject": "CSS",
                 "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/CSS.png",
                 "logoWidth": "100",
                 "logoHeight": "100"
@@ -38,6 +38,7 @@
     }
 
 ]
+
 
 
 
