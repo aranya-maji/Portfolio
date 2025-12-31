@@ -3,11 +3,20 @@
         "field": "Skill",
         "repo": [
             {
-                "subject": ".NET Developer",
-                "organisation": "Company",
-                "date": "1st January 2025",
-                "description": "I worked as an employee",
-                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/nologo.png",
+                "subject": "JS"
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/JS.png",
+                "logoWidth": "100",
+                "logoHeight": "100"
+            },
+            {
+                "subject": "HTML"
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/HTML.png",
+                "logoWidth": "100",
+                "logoHeight": "100"
+            },
+            {
+                "subject": "CSS"
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/CSS.png",
                 "logoWidth": "100",
                 "logoHeight": "100"
             }
@@ -29,6 +38,7 @@
     }
 
 ]
+
 
 
 
