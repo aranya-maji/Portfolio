@@ -10,33 +10,6 @@
                 "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/nologo.png",
                 "logoWidth": "100",
                 "logoHeight": "100"
-            },
-            {
-                "subject": ".NET Developer",
-                "organisation": "Company",
-                "date": "10th November 2024",
-                "description": "I worked as an employee",
-                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/nologo.png",
-                "logoWidth": "100",
-                "logoHeight": "100"
-            },
-            {
-                "subject": ".NET Developer",
-                "organisation": "Company",
-                "date": "10th November 2024",
-                "description": "I worked as an employee",
-                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/nologo.png",
-                "logoWidth": "100",
-                "logoHeight": "100"
-            },
-            {
-                "subject": ".NET Developer",
-                "organisation": "Company",
-                "date": "10th November 2024",
-                "description": "I worked as an employee",
-                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/nologo.png",
-                "logoWidth": "100",
-                "logoHeight": "100"
             }
         ]
     },
@@ -56,4 +29,5 @@
     }
 
 ]
+
 
