@@ -15,6 +15,18 @@
                 "logoHeight": "100"
             },
             {
+                "subject": "SQL",
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/SQL.png",
+                "logoWidth": "100",
+                "logoHeight": "100"
+            },
+            {
+                "subject": "Git",
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/Git.png",
+                "logoWidth": "100",
+                "logoHeight": "100"
+            },
+            {
                 "subject": "ReactJs",
                 "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/React.png",
                 "logoWidth": "100",
@@ -68,6 +80,7 @@
     }
 
 ]
+
 
 
 
