@@ -67,6 +67,18 @@
                 "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/System_Architecture.png",
                 "logoWidth": "100",
                 "logoHeight": "100"
+            },
+            {
+                "subject": "Blender",
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/Blender.png",
+                "logoWidth": "100",
+                "logoHeight": "100"
+            },
+            {
+                "subject": "Unity",
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/Unity.png",
+                "logoWidth": "100",
+                "logoHeight": "100"
             }
         ]
     },
@@ -86,6 +98,7 @@
     }
 
 ]
+
 
 
 
