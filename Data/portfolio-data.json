@@ -91,8 +91,8 @@
                 "date": "1st July 2025",
                 "description": "I work for the project SorbyLIMS (Laboratory Inventory Management System), which is an in-house LIMS system. My responsibility is to fix bugs and issues, create new features and maintain the application in the Production. Being a part of this project, I work with ASP.Net and SQL.",
                 "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/Bureau_Veritas.png",
-                "logoWidth": "100",
-                "logoHeight": "100"
+                "logoWidth": "256",
+                "logoHeight": "256"
             },
             {
                 "subject": ".NET Developer Intern",
@@ -100,13 +100,14 @@
                 "date": "17th December 2024 - 1st July 2025",
                 "description": "I was given training and knowledge for the project SorbyLIMS (Laboratory Inventory Management System). My responsibility was in the due course of this period, learn about the application and help seniors with debugging of the issues, providing hands-on knowledge about how the application is actually working.",
                 "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/Bureau_Veritas.png",
-                "logoWidth": "100",
-                "logoHeight": "100"
+                "logoWidth": "256",
+                "logoHeight": "256"
             }
         ]
     }
 
 ]
+
 
 
 
