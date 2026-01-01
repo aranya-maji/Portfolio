@@ -1,5 +1,30 @@
 [
     {
+        "field": "Projects",
+        "repo": [
+            {
+                "subject": "Perceptron Model",
+                "description": "This is my personal attempt to create and implement the Perceptron model using C#. This project still has bugs and currently under work."
+            },
+            {
+                "subject": "Community Detection",
+                "description": "This was a very intriguing project. Basically this was an implementation of community detection algorithm, which is a fairly advanced part of Machine Learning. This project was under research with the supervising professor and a team of two."
+            },
+            {
+                "subject": "Recipebook website",
+                "description": "A dummy project made during my college times to learn more about deploying project in firebase and using firestore database to fetch and store data."
+            },
+            {
+                "subject": "Mumbai Metro - Interchanges",
+                "description": "This was a project made by implementing dijkstra algorithm to do basic functions like find shortest route, find fare, distance between Station A to Station B, find interchanges etc. in a replicated mumbai metro layout. This was coded in C++ during my college time."
+            },
+            {
+                "subject": "Game Consoles",
+                "description": "A few game consoles were created that consisted of several games into one single console program. The consoles and the games in it were created in C++ and Python."
+            }
+        ]
+    },
+    {
         "field": "Skill",
         "repo": [
             {
@@ -106,42 +131,26 @@
         ]
     },
     {
-        "field": "Projects",
+        "field": "Education",
         "repo": [
             {
-                "subject": "Perceptron Model",
-                "description": "This is my personal attempt to create and implement the Perceptron model using C#. This project still has bugs and currently under work."
+                "subject": "BTech CSE",
+                "organisation": "Jaypee Institute of Information Technology, Noida",
+                "date": "1st June 2021 - 1st June 2025",
+                "description": "I completed my graduation in Bachelor of Technology in Computer Science and Engineering from JIIT, Noida. Securing an overall CGPA of 7.7",
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/JIIT.png",
+                "logoWidth": "256",
+                "logoHeight": "256"
             },
             {
-                "subject": "Community Detection",
-                "description": "This was a very intriguing project. Basically this was an implementation of community detection algorithm, which is a fairly advanced part of Machine Learning. This project was under research with the supervising professor and a team of two."
-            },
-            {
-                "subject": "Recipebook website",
-                "description": "A dummy project made during my college times to learn more about deploying project in firebase and using firestore database to fetch and store data."
-            },
-            {
-                "subject": "Mumbai Metro - Interchanges",
-                "description": "This was a project made by implementing dijkstra algorithm to do basic functions like find shortest route, find fare, distance between Station A to Station B, find interchanges etc. in a replicated mumbai metro layout. This was coded in C++ during my college time."
-            },
-            {
-                "subject": "Game Consoles",
-                "description": "A few game consoles were created that consisted of several games into one single console program. The consoles and the games in it were created in C++ and Python."
+                "subject": "Higher Secondary - Engineering",
+                "organisation": "St. Joseph's School, NTPC Kahalgaon",
+                "date": "1st June 2021 - 1st June 2025",
+                "description": "I completed my higher secondary graduation in Engineering with Computer Science from St. Joseph's School NTPC Kahalgaon, Bihar. Securing an overall perventage of 96.4%",
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/SJS.png",
+                "logoWidth": "256",
+                "logoHeight": "256"
             }
         ]
     }
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
