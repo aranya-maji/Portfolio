@@ -194,7 +194,7 @@
                 "subject": "Mentor",
                 "organisation": "GameDev Hub JIIT",
                 "date": "1st June 2021 - 1st June 2023",
-                "description": "I was the youngest mentor in the institution to tutor juniors about Blender 3D software and how to use it.",
+                "description": "I was the youngest mentor in the institution to tutor juniors about Blender 3D software and how to use it. During this time I did freelancing for multiple startups in this field.",
                 "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/GD.png",
                 "logoWidth": "256",
                 "logoHeight": "256"
@@ -202,6 +202,7 @@
         ]
     }
 ]
+
 
 
 
