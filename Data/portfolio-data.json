@@ -140,12 +140,12 @@
                 "description": "I completed my graduation in Bachelor of Technology in Computer Science and Engineering from JIIT, Noida. Securing an overall CGPA of 7.7",
                 "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/JIIT.png",
                 "logoWidth": "256",
-                "logoHeight": "256"
+                "logoHeight": "321"
             },
             {
                 "subject": "Higher Secondary - Engineering",
                 "organisation": "St. Joseph's School, NTPC Kahalgaon",
-                "date": "1st June 2021 - 1st June 2025",
+                "date": "31st March 2019 - 31st March 2021",
                 "description": "I completed my higher secondary graduation in Engineering with Computer Science from St. Joseph's School NTPC Kahalgaon, Bihar. Securing an overall perventage of 96.4%",
                 "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/SJS.png",
                 "logoWidth": "256",
@@ -154,3 +154,4 @@
         ]
     }
 ]
+
