@@ -104,9 +104,34 @@
                 "logoHeight": "256"
             }
         ]
+    },
+    {
+        "field": "Projects",
+        "repo": [
+            {
+                "subject": "Perceptron Model",
+                "description": "This is my personal attempt to create and implement the Perceptron model using C#. This project still has bugs and currently under work."
+            },
+            {
+                "subject": "Community Detection",
+                "description": "This was a very intriguing project. Basically this was an implementation of community detection algorithm, which is a fairly advanced part of Machine Learning. This project was under research with the supervising professor and a team of two."
+            },
+            {
+                "subject": "Recipebook website",
+                "description": "A dummy project made during my college times to learn more about deploying project in firebase and using firestore database to fetch and store data."
+            },
+            {
+                "subject": "Mumbai Metro - Interchanges",
+                "description": "This was a project made by implementing dijkstra algorithm to do basic functions like find shortest route, find fare, distance between Station A to Station B, find interchanges etc. in a replicated mumbai metro layout. This was coded in C++ during my college time."
+            },
+            {
+                "subject": "Game Consoles",
+                "description": "A few game consoles were created that consisted of several games into one single console program. The consoles and the games in it were created in C++ and Python."
+            }
+        ]
     }
-
 ]
+
 
 
 
