@@ -86,11 +86,20 @@
         "field": "Experience",
         "repo": [
             {
-                "subject": ".NET Developer 1",
-                "organisation": "Company 1",
-                "date": "1st January 2026 - 3rd January 2026",
-                "description": "I worked as an employee 1",
-                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/nologo.png",
+                "subject": ".NET Developer Trainee",
+                "organisation": "Bureau Veritas",
+                "date": "1st June 2025",
+                "description": "I work for the project SorbyLIMS (Laboratory Inventory Management System), which is an in-house LIMS system. My responsibility is to fix bugs and issues, create new features and maintain the application in the Production. Being a part of this project, I work with ASP.Net and SQL.",
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/Bureau_Veritas.png",
+                "logoWidth": "100",
+                "logoHeight": "100"
+            },
+            {
+                "subject": ".NET Developer Intern",
+                "organisation": "Bureau Veritas",
+                "date": "17th December 2024 - 1st June 2025",
+                "description": "I was given training and knowledge for the project SorbyLIMS (Laboratory Inventory Management System). My responsibility was in the due course of this period, learn about the application and help seniors with debugging of the issues, providing hands-on knowledge about how the application is actually working.",
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/Bureau_Veritas.png",
                 "logoWidth": "100",
                 "logoHeight": "100"
             }
@@ -98,6 +107,7 @@
     }
 
 ]
+
 
 
 
