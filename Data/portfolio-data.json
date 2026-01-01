@@ -3,6 +3,10 @@
         "field": "Projects",
         "repo": [
             {
+                "subject": "Mega Project",
+                "description": "Under the institution, I along with a team created multiple games that were playable by physically challenged for the upliftment of mood and cognitive improvement and enjoyment. Created a controller in Java that is able to detect movement of the face and expressions, based on which few dedicated games were created in Unity and Python that were controlled by this controller. This was a proprietary project under JIIT."
+            },
+            {
                 "subject": "Perceptron Model",
                 "description": "This is my personal attempt to create and implement the Perceptron model using C#. This project still has bugs and currently under work."
             },
@@ -173,8 +177,32 @@
                 "description": "Software Architecture & Design of Modern Large Scale Systems - Michael Pogrebinsky"
             }
         ]
+    },
+    {
+        "field": "Achievements",
+        "repo": [
+            {
+                "subject": "Vice Head",
+                "organisation": "GameDev Hub JIIT",
+                "date": "1st June 2023 - 1st June 2024",
+                "description": "I lead the way for the success of the hub along with other leading individuals. Creating a strong foundation for the hub to thrive and grow.",
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/GD.png",
+                "logoWidth": "256",
+                "logoHeight": "256"
+            },
+            {
+                "subject": "Mentor",
+                "organisation": "GameDev Hub JIIT",
+                "date": "1st June 2021 - 1st June 2023",
+                "description": "I was the youngest mentor in the institution to tutor juniors about Blender 3D software and how to use it.",
+                "logo": "https://raw.githubusercontent.com/aranya-maji/Portfolio/refs/heads/main/Data/logos/GD.png",
+                "logoWidth": "256",
+                "logoHeight": "256"
+            }
+        ]
     }
 ]
+
 
 
 
