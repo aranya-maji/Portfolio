@@ -152,6 +152,28 @@
                 "logoHeight": "256"
             }
         ]
+    },
+    {
+        "field": "Certifications",
+        "repo": [
+            {
+                "subject": "AWS",
+                "description": "Ultimate AWS Certified Cloud Practitioner CLF-C02 - Stephane Maarek"
+            },
+            {
+                "subject": "Git & Github",
+                "description": "The Git & Github Bootcamp - Colt Steele"
+            },
+            {
+                "subject": "Software Architecture & Design",
+                "description": "SOLID Principles: Introducing Software Architecture & Design - George Sonora"
+            },
+            {
+                "subject": "Software Architecture & Design",
+                "description": "Software Architecture & Design of Modern Large Scale Systems - Michael Pogrebinsky"
+            }
+        ]
     }
 ]
+
 
